@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    margin: 50px 50px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 90vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightgreen;
+}
+.display{
+    width: 80%;
+    height: 100px;
+    background-color: rgb(184, 245, 184);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.display > p{
+    margin: 17px;
+    font-size: 35px;
+}
+.message{
+    display: flex;
+}
+#correct , #wrong {
+    width: 100px;
+    display: none;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px;
+    text-transform: capitalize;
+    transition: 0.9s;
+}
+#correct p{
+    background-color: green;  
+}
+#wrong p{
+    background-color: red;
+}
+.instruction{
+    width: 65%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+}
+.instruction h3 {
+    font-size: 22px;
+    color: rgb(48, 45, 20);
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+#btn button{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+#btn button:hover{
+    width: 123px;
+    height: 55px;
+}
+#start{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgba(93, 253, 1, 0.671);
+    transition: 0.5s;
+}
+#start:hover{
+    width: 102px;
+    height: 41px;
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.below > button .counter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+#over{
+    display: none;
+    background-color: rgb(235, 194, 81);
+    height: 57px;
+    font-size: 25px;
+    font-weight: 550;
+    color: #333;
+}
+#over h1{
+    margin: 10px;
+}
+
+@media screen and (max-width: 450px){
+
+    .instruction h3{
+        font-size: 18px;
+    }
+
+}

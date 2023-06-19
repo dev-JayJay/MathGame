@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maths Game</title>
+</head>
+<body>
+
+    <section class="body">
+        <div class="container">
+            <div class="score">
+                <p>score:<p id="score">0</p></p>
+            </div>
+            <div class="message">
+                <div id="correct">
+                    <p>you are correct</p>
+                </div>
+                <div id="wrong">
+                    <p>you are wrong</p>
+                </div>
+            </div>
+            <div class="display">
+                <p id="outPut"></p>
+            </div>
+            <div class="instruction">
+                <h3 id="instruction">Choose The Correct Answers...!!!!</h3>
+                <p id="over"><h1> </h1></p>
+            </div>
+    
+
+            <div id="btn">
+                <button  id="btn1"></button>
+                <button  id="btn2"></button>
+                <button  id="btn3"></button>
+                <button  id="btn4"></button>
+            </div>
+           <div class="below">
+            <button onclick="startGame()" id="start">Start Game</button>
+            <div id="counter">
+                <p id="timecounter" >Time Rememaining:<span id="countTime">60</span></p>
+            </div>
+        </div>
+        
+           </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
